@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ForgottenRemittances - الحوالات المنسية</title>
-  <!-- خط أنيق من Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- أيقونات Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -38,7 +36,6 @@
       position: relative;
       overflow: hidden;
     }
-    /* لمسة علوية ناعمة */
     .container::before {
       content: "";
       position: absolute;
@@ -52,15 +49,19 @@
     .app-icon {
       width: 80px;
       height: 80px;
-      background: #eef4ff;
+      background: #ffffff; /* خلفية بيضاء */
       border-radius: 22px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 24px;
-      color: #3b82f6;
-      font-size: 38px;
-      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden; /* يضمن عدم خروج الصورة عن الحواف */
+    }
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* يحافظ على تناسب الصورة داخل المربع */
     }
     h1 {
       font-size: 26px;
@@ -142,7 +143,6 @@
       color: #94a3b8;
       margin-top: 24px;
     }
-    /* تحسين المظهر على الشاشات الصغيرة */
     @media (max-width: 400px) {
       .container {
         padding: 32px 20px 24px;
@@ -152,32 +152,26 @@
 </head>
 <body>
   <div class="container">
-    <!-- أيقونة التطبيق -->
+    <!-- أيقونة التطبيق بصورة logo.png -->
     <div class="app-icon">
-      <i class="fas fa-search-dollar"></i>
+      <img src="logo.png" alt="شعار ForgottenRemittances">
     </div>
 
-    <!-- اسم التطبيق والوصف -->
     <h1>ForgottenRemittances</h1>
     <p class="subtitle">
       ابحث عن حوالاتك المنسية في جميع شبكات التحويل اليمنية من مكان واحد.
       سريع، آمن، وخاص.
     </p>
 
-    <!-- زر التحميل (تأكد من اسم الملف بعد إعادة التسمية) -->
     <a href="ForgottenRemittances-v1.3.apk" class="download-btn" download>
       <i class="fas fa-download"></i> تحميل التطبيق
     </a>
 
-    <!-- معلومات المطور -->
     <div class="developer-section">
       <div class="dev-name">المبرمج علي الطيب</div>
       <div class="contact-icons">
-        <!-- هاتف -->
         <a href="tel:+967739915621" title="اتصال هاتفي"><i class="fas fa-phone-alt"></i></a>
-        <!-- واتساب -->
         <a href="https://wa.me/+967771246646" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
-        <!-- فيسبوك -->
         <a href="https://www.facebook.com/profile.php?id=100021680474062" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
