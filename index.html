@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForgottenRemittances - الحوالات المنسية</title>
+  <!-- خط أنيق من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f4f7fa;
+      background-image: radial-gradient(circle at 10% 20%, #e6edf5 0%, #f4f7fa 90%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #1e293b;
+    }
+    .container {
+      max-width: 450px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.03);
+      padding: 40px 30px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    /* لمسة علوية ناعمة */
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(to left, #3b82f6, #60a5fa);
+      border-radius: 0 0 20px 20px;
+    }
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      background: #eef4ff;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      color: #3b82f6;
+      font-size: 38px;
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #475569;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      padding: 0 10px;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #3b82f6;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 60px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 12px 24px rgba(59, 130, 246, 0.25);
+      margin-bottom: 36px;
+      border: none;
+      cursor: pointer;
+    }
+    .download-btn:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 30px rgba(37, 99, 235, 0.35);
+    }
+    .download-btn i {
+      font-size: 20px;
+    }
+    .developer-section {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 24px;
+      margin-top: 10px;
+    }
+    .dev-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 16px;
+    }
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .contact-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 20px;
+      transition: all 0.25s;
+      text-decoration: none;
+    }
+    .contact-icons a:hover {
+      background: #3b82f6;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(59, 130, 246, 0.3);
+    }
+    .footer-note {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 24px;
+    }
+    /* تحسين المظهر على الشاشات الصغيرة */
+    @media (max-width: 400px) {
+      .container {
+        padding: 32px 20px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- أيقونة التطبيق -->
+    <div class="app-icon">
+      <i class="fas fa-search-dollar"></i>
+    </div>
+
+    <!-- اسم التطبيق والوصف -->
+    <h1>ForgottenRemittances</h1>
+    <p class="subtitle">
+      ابحث عن حوالاتك المنسية في جميع شبكات التحويل اليمنية من مكان واحد.
+      سريع، آمن، وخاص.
+    </p>
+
+    <!-- زر التحميل (تأكد من اسم الملف بعد إعادة التسمية) -->
+    <a href="ForgottenRemittances-v1.3.apk" class="download-btn" download>
+      <i class="fas fa-download"></i> تحميل التطبيق
+    </a>
+
+    <!-- معلومات المطور -->
+    <div class="developer-section">
+      <div class="dev-name">المبرمج علي الطيب</div>
+      <div class="contact-icons">
+        <!-- هاتف -->
+        <a href="tel:+967739915621" title="اتصال هاتفي"><i class="fas fa-phone-alt"></i></a>
+        <!-- واتساب -->
+        <a href="https://wa.me/+967771246646" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+        <!-- فيسبوك -->
+        <a href="https://www.facebook.com/profile.php?id=100021680474062" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-note">تحميل مباشر وآمن • جميع الحقوق محفوظة</div>
+  </div>
+</body>
+</html>
